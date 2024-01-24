@@ -36,8 +36,20 @@ export default function AboutCard() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button
+          size="small"
+          target="_blank"
+          href="https://github.com/FernandaGuemez"
+        >
+          GitHub
+        </Button>
+        <Button
+          size="small"
+          target="_blank"
+          href="https://www.linkedin.com/in/maria-fernanda-g%C3%BC%C3%A9mez-medina-568140291/"
+        >
+          LinkedIn
+        </Button>
       </CardActions>
     </Card>
   );
