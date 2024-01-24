@@ -8,16 +8,15 @@ import Typography from "@mui/material/Typography";
 import cardImage from "../About/fer.jpg";
 
 export default function AboutCard() {
-  const { names, profile, city, state, email, info } = {
+  const { names, profile, city, state, email } = {
     names: "Maria Fernanda Guemez Medina",
     profile: "Desarrolladora Java Full Stack Jr.",
     city: "Mérida, Yucatán",
     email: "fernanda.guemez@gmail.com",
-    info: "Apasionada de la naturaleza y del aprendizaje constante",
   };
   return (
-    <Card className="card" sx={{ maxWidth: 300 }}>
-      <CardMedia sx={{ height: 300 }} image={cardImage} title="green iguana" />
+    <Card className="card" sx={{ maxWidth: 400 }}>
+      <CardMedia sx={{ height: 400 }} image={cardImage} title="green iguana" />
       <CardContent>
         <Typography gutterBottom variant="h4" component="div">
           {names}
@@ -31,9 +30,16 @@ export default function AboutCard() {
         <Typography variant="body1" color="text.secondary">
           {email}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {info}
-        </Typography>
+        <div>
+          <p>
+            Apasionada de la naturaleza y del aprendizaje constante. Actualmente
+            me estoy formando como Desarrolladora Java Full Stack en Generation
+            México. Adicionalmente soy Ingeniera ambiental con 10 años de
+            experiencia en gestión de proyectos, liderazgo, resolución de
+            problemas, pensamiento crítico, comunicación efectiva y trabajo en
+            equipo.
+          </p>
+        </div>
       </CardContent>
       <CardActions>
         <Button
